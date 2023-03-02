@@ -1,0 +1,47 @@
+@import "intro.scss";
+@import "form.scss";
+@import "projet.scss";
+@import "connection.scss";
+
+
+// intro
+*,
+*::before,
+*::after{
+    padding:0;
+    margin:0;
+}
+// intro
+    body{
+      height: 100%;
+      width: 100%; 
+      margin: auto;
+      padding: 0;
+
+      .intro{
+      margin: auto;
+      width: 100vw;
+      height: 100vh;
+      background: black;
+      position: relative;
+     
+      
+      #logo{
+        position: absolute;
+        
+        top: 35%; left: 40%; 
+        width: 100vw;
+        height: 20vh;
+        padding: 0;
+      }
+  // mettre un screen du portfolio fini lors du passage de la souris sur le logo
+  // https://www.youtube.com/watch?v=YL1txIkS14s&ab_channel=CoDesign
+  }
+
+}
+
+
+
+
+
+

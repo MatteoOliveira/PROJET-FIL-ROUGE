@@ -1,0 +1,376 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+  width: 100%;
+  color: black;
+  background: white;
+  overflow: hidden;
+  background-image: url(../../../a-projet_rouge/image/solid-concrete-wall-textured-backdrop.jpg);
+}
+body canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+body nav {
+  padding: 10px;
+  margin: 20px 0 0 0;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+body nav ul {
+  list-style: none;
+  display: flex;
+  /*axe horizontal*/
+  justify-content: flex-end;
+}
+body nav ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+body nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: medium;
+}
+body nav ul li a:hover {
+  color: #000000;
+  cursor: nw-resize;
+}
+body main {
+  position: fixed;
+  z-index: 1;
+  padding: 0%;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+body main h2 {
+  width: 40%;
+  color: white;
+  margin-top: 25%;
+  margin-left: 10%;
+}
+body main h2 strong {
+  color: #82C172;
+  font-weight: 900;
+}
+body main a {
+  width: 60%;
+}
+body main a img {
+  width: 40%;
+  margin-top: 20%;
+  margin-left: 30%;
+  animation: draw 2s ease-in-out forwards;
+}
+@keyframes draw {
+  0% {
+    opacity: 0;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  100% {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+body footer a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 100;
+  position: absolute;
+  left: 95%;
+  top: 95%;
+  color: white;
+  z-index: 20;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  height: 80vh;
+  background-image: url(../../../a-projet_rouge/image/solid-concrete-wall-textured-backdrop.jpg);
+}
+
+a {
+  width: 20%;
+}
+a img {
+  padding: 0;
+  width: 20%;
+}
+
+.box {
+  margin-left: 30%;
+  width: 500px;
+  height: auto;
+  padding: 25px;
+}
+.box h3 strong {
+  color: #82C172;
+  font-weight: 900;
+}
+
+.formBloc h3 {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.formBloc .formGroupe {
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+}
+.formBloc .formGroupe label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  transition: 0.4s ease-out;
+}
+.formBloc .formGroupe input {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid #aaa;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  transition: 0.4s ease-out;
+}
+.formBloc .formGroupe .button {
+  display: block;
+  width: auto;
+  padding: 15px 60px;
+  border: 3px solid #8b97d7;
+  border-radius: 999px;
+  background-image: linear-gradient(to right, transparent 50%, #5260ad 50%, #8b97d7);
+  background-size: 200%;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.formBloc .formGroupe .button:hover {
+  color: #fff;
+  background-position: 100%;
+  border: none;
+}
+.formBloc .formGroupe:focus-within label {
+  top: 0px;
+  transform: translateY(-100%);
+  color: #8b97d7;
+}
+.formBloc .formGroupe:focus-within input {
+  border-bottom-color: #8b97d7;
+}
+.formBloc .formGroupe.animation label {
+  top: 0px;
+  transform: translateY(-100%);
+  color: #092cef;
+}
+.formBloc .formGroupe.animation input {
+  border-bottom-color: #ffffff;
+}
+
+.formGroupe:nth-child(4) {
+  margin-bottom: 65px;
+  justify-content: center;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+footer a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 100;
+  position: absolute;
+  left: 95%;
+  top: 95%;
+  color: white;
+  z-index: 20;
+}
+
+body {
+  height: 80vh;
+  background-image: url(../../../a-projet_rouge/image/solid-concrete-wall-textured-backdrop.jpg);
+}
+
+.suite {
+  width: 40%;
+}
+.suite a {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 500;
+  position: absolute;
+  left: 79%;
+  top: 88%;
+  color: white;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+  width: 100%;
+  color: black;
+  background: white;
+  overflow: hidden;
+  background-image: url(../../../a-projet_rouge/image/solid-concrete-wall-textured-backdrop.jpg);
+}
+body a {
+  width: 20%;
+}
+body a img {
+  padding: 0;
+  width: 20%;
+}
+body .box {
+  margin: auto;
+  width: 500px;
+  height: auto;
+  padding: 25px;
+}
+body .box h3 strong {
+  color: #82C172;
+  font-weight: 900;
+}
+body .box .formBloc h3 {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 45px;
+  text-align: center;
+}
+body .box .formBloc .formGroupe {
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+}
+body .box .formBloc .formGroupe label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  transition: 0.4s ease-out;
+}
+body .box .formBloc .formGroupe input {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid #aaa;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  transition: 0.4s ease-out;
+}
+body .box .formBloc .formGroupe .button {
+  display: block;
+  width: auto;
+  padding: 15px 60px;
+  border: 3px solid #8b97d7;
+  border-radius: 999px;
+  background-image: linear-gradient(to right, transparent 50%, #5260ad 50%, #8b97d7);
+  background-size: 200%;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+body .box .formBloc .formGroupe .button:hover {
+  color: #fff;
+  background-position: 100%;
+  border: none;
+}
+body .box .formBloc .formGroupe:focus-within label {
+  top: 0px;
+  transform: translateY(-100%);
+  color: #8b97d7;
+}
+body .box .formBloc .formGroupe:focus-within input {
+  border-bottom-color: #8b97d7;
+}
+body .box .formBloc .formGroupe.animation label {
+  top: 0px;
+  transform: translateY(-100%);
+  color: #092cef;
+}
+body .box .formBloc .formGroupe.animation input {
+  border-bottom-color: #ffffff;
+}
+body .box .formGroupe:nth-child(4) {
+  margin-bottom: 65px;
+  justify-content: center;
+}
+body footer a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 100;
+  position: absolute;
+  left: 95%;
+  top: 95%;
+  color: white;
+  z-index: 20;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+body .intro {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: relative;
+}
+body .intro #logo {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  width: 100vw;
+  height: 20vh;
+  padding: 0;
+}

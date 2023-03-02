@@ -1,0 +1,92 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+  width: 100%;
+  color: black;
+  background: white;
+  overflow: hidden;
+  background-image: url(../../../a-projet_rouge/image/solid-concrete-wall-textured-backdrop.jpg);
+}
+body canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+body nav {
+  padding: 10px;
+  margin: 20px 0 0 0;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+body nav ul {
+  list-style: none;
+  display: flex;
+  /*axe horizontal*/
+  justify-content: flex-end;
+}
+body nav ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+body nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: medium;
+}
+body nav ul li a:hover {
+  color: #000000;
+  cursor: nw-resize;
+}
+body main {
+  position: fixed;
+  z-index: 1;
+  padding: 0%;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+body main h2 {
+  width: 40%;
+  color: white;
+  margin-top: 25%;
+  margin-left: 10%;
+}
+body main h2 strong {
+  color: #82C172;
+  font-weight: 900;
+}
+body main a {
+  width: 60%;
+}
+body main a img {
+  width: 40%;
+  margin-top: 20%;
+  margin-left: 30%;
+  animation: draw 2s ease-in-out forwards;
+}
+@keyframes draw {
+  0% {
+    opacity: 0;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  100% {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+body footer a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 100;
+  position: absolute;
+  left: 95%;
+  top: 95%;
+  color: white;
+  z-index: 20;
+}
